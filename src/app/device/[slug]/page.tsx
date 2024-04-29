@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DeviceTable from "./table";
 
 type Device = {
   title: string;
@@ -59,8 +60,8 @@ export default function Device({ params }: { params: { slug: string } }) {
     ({ title }) => title.toLowerCase() === slug.toLowerCase()
   );
   return device ? (
-    <div>
-      <div>
+    <div className="max-w-screen-sm p-10">
+      <div className="flex flex-col">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           {device.title}
         </h1>
@@ -73,12 +74,12 @@ export default function Device({ params }: { params: { slug: string } }) {
             {device.author}
           </a>
         </h2>
-        <div className="overflow-hidden rounded-md">
+        <div className="overflow-hidden rounded-md max-w-lg p-5 self-center justify-center">
           <Image
             src={device.image}
             alt="device image"
-            width={200}
-            height={200}
+            width={400}
+            height={100}
             className="h-auto w-auto object-cover portrait"
           />
         </div>
@@ -86,8 +87,8 @@ export default function Device({ params }: { params: { slug: string } }) {
       </div>
       <div>
         <div className="my-6 w-full overflow-y-auto">
-          <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Device Details</h4>
-          <Table
+          <DeviceTable
+            title="Device Details"
             rows={{
               Tags: device.tags.join(","),
               "Max Version Used": device.maxVersion,
@@ -105,29 +106,3 @@ export default function Device({ params }: { params: { slug: string } }) {
     </div>
   ) : "";
 }
-
-type TableProps = {
-  rows: Record<string, string>;
-};
-const Table = (props: TableProps) => {
-  const { rows } = props;
-  return (
-    <table className="w-full">
-      <tbody>
-        {Object.entries(rows).map(([key, value]) => (
-          <tr key={key} className="m-0 border-t p-0 even:bg-muted">
-            <th
-              className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right"
-              scope="row"
-            >
-              {key}
-            </th>
-            <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
-              {value}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-};
