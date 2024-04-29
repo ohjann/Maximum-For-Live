@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "macromod",
+    "title": "MacroMod 1.0 by Tabula",
+    "author": "Tabula",
+    "authorUrl": "https://maxforlive.com/profile/user/Tabula",
+    "image": "https://maxforlive.com/images/screenshots/?ss=Capture%20d%E2%80%99e%CC%81cran%202024-04-29%20a%CC%80%2015.35.58.jpg&id=10336",
+    "description": "A super simple device.\n\nIt's a alternate version of :\nhttps://maxforlive.com/library/device/10291/remote2mod\nThanks to finleguin\n\nIt's a shame that Live 12 hasn't implemented its new modulation system for macros yet. I've attempted to address this shortfall.\n\nWith this device and a workaround, you can stay in control of a parameter even after it’s been mapped to a macro knob !\n\nThis is very useful if you want to change presets without assigning the macro's value changes to it.\n\nYou can use the \"Mod\" function, and the potentiometer will range from -100% to 100%. This way, 0% corresponds to the original parameter value. The remote function is also there for a more traditional mapping.\n\nIn a rack, mapping the potentiometer to a macro allows you to use variations without altering the preset's original parameters, and you can still adjust the parameters within the original device.\n\nI've included 8 and 16 knobs versions\n\nAbleton 12 compatible",
+    "tags": ["utility", "push"],
+    "liveVersion": "12",
+    "maxVersion": "8.1.5",
+    "dateAdded": "Apr 29 2024 15:11:32",
+    "type": "midi_device",
+    "downloadUrl": "https://subtabula.gumroad.com/l/MacroMod",
+    "license": "None"
+  },
+  {
+   "slug": "polyrhythmus-a-modular-euclidean-rhythm-builder",
+   "title": "POLYRHYTHMUS - a modular euclidean rhythm builder 1.01",
+   "author": "bennniii",
+   "authorUrl": "https://maxforlive.com/profile/user/bennniii",
+   "image": "https://maxforlive.com/images/screenshots/?ss=POLYRHYTHMUS.gif&id=2431",
+    "description": "* * * * * * * * * * * * * * * * *\n    please note, as of JAN 2016:\n    i am gracious out of my mind for all your positive feedback and incredibly happy about how POLYRHYTHMUS was perceived in this community. i will be continuing my work on POLYRHYTHMUS 2, and i hope i'll do so soon (it's almost finished, damn!) – how ever i can't say when.\n\n    i am a freelancing and struggling graphics- and sound-designer and unfortunately have to prioritise the work i make a living off of. my next, yet ernest priority are the projects i get caught up in. i myself have gotten deeply into standalone sequencing-applications, which makes POLYRHYTHMUS currently obsolete as for my own needs. as many of you may know, being a freelancer is a balancing act between financial necessities, time management and passionate interests. work and creative leisure time. doing crap for money and doing stuff that you really love. i was hoping, that the donation-concept for this plugin could simplify this balancing act. unfortunately and to my regret, the world doesn't appear to work this way at all :) this results in: POLYRHYTHMUS currently being on hiatus, you guys waiting for a nifty new version and me myself spending time on stuff i like doing less that building free and fun tools for making music.\n\n    if you like POLYRHYTHMUS, consider a small donation via paypal benni(*AT*)fnfnfnfn.de. buy me a coffee and especially time and confidence to finish this thing *heart*\n\n    * * * * * * * * * * * * * * * * *\n\n    POLYRHYTHMUS is a rhythm sequencer, arpeggio builder, cc and parameter automator and mathematical geek.\n\n    build polyrhythmic (counterpoint, polymetric etc) patterns, use them (live) as arpeggiators and/or to sequence drums, CCs, parameters of your live etc. run sequences sinusodial, trigger one sequence with another, have 23 steps run in the same time as 5 others do, skip steps, randomize parameters and alot more. give the long video a chance.\n\n    * * * * * * * * * * * * * * * * *\n\n    thank you: there are other people who have had other approaches for euclidean rhythm-sequencing. check phil archer's \"circle sequencers\", wouter hisschemöller's \"euclidean midi patterns\" and/or read up on godfried toussaint's \"the euclidean algorithm generates traditional musical rhythms\"\n\n    - - - - - - - - - - - - - - - - - - - - -\n\n    TINY FAQ:\n\n    HOW DOES THIS WORK?\n    > click on little boxes in sequencer-lanes to active them. they represent the steps! (:\n\n      POLYRHYTHMUS IS NOT SAVING MY SETTING!\n      > please install latest version of max and live\n\n      - - - - - - - - - - - - - - - - - - - - -\n\n      TINY CHANGELOG:\n\n      V 1.01 (DEC 18 2016)\n      fixed a bug that may prevent the device from expanding\n\n      V 1.0 (JUL 17 2014)\n      first release\n\n      - - - - - - - - - - - - - - - - - - - - - ",
+     "downloads": 90228,
+     "tags": ["synth", "drum", "sequencer", "effect", "utility", "other", "hardware"],
+     "liveVersion": "9.1.2",
+     "maxVersion": "6.1.7",
+     "dateAdded": "Jul 17 2014 22:09:31",
+     "lastUpdated": "Oct 12 2017 09:41:20",
+     "rating": "5",
+     "type": "midi_device",
+     "url": "https://www.youtube.com/watch?v=xTgSgTGoBLc",
+     "license": "AttributionNonCommercial"
+  }
+]
