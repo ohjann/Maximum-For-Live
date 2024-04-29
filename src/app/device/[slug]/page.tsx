@@ -1,7 +1,7 @@
 import Image from "next/image";
 import DeviceTable from "./table";
 
-type Device = {
+export type Device = {
   slug: string;
   title: string;
   author: string;
