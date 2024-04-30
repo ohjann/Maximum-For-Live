@@ -10,7 +10,7 @@ const convertToDevice = (obj: any): Device => {
         authorUrl: '', // TODO
         image: '', // TODO 
         description: obj['Description:'],
-        tags: obj['Tags:'],
+        tags: obj['Tags'].split(","),
         liveVersion: obj['Live Version Used:'],
         maxVersion: obj['Max Version Used:'],
         dateAdded: new Date(obj['Date Added:']),
@@ -78,6 +78,7 @@ const crawler = new CheerioCrawler({
 });
 const main = async () => {
   await crawler.run(["https://maxforlive.com/library/"]);
+  await Dataset.exportToJSON("devices")
 };
 
 main();

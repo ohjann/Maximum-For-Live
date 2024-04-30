@@ -21,7 +21,7 @@ export type Device = {
   license: string;
 };
 
-const data: Device[] = require("./data");
+const data: Device[] = require("../../../../storage/key_value_stores/default/devices.json");
 
 export default function Device({ params }: { params: { slug: string } }) {
   const slug = decodeURI(params.slug);
