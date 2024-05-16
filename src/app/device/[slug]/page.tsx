@@ -1,6 +1,12 @@
 import Image from "next/image";
 import DeviceTable from "./table";
 
+enum DeviceType {
+  midi_device,
+  audio_device,
+  instrument_device
+}
+
 export type Device = {
   slug: string;
   title: string;
@@ -14,7 +20,7 @@ export type Device = {
   dateAdded: Date;
   lastUpdated?: Date;
   rating?: string;
-  type: string; // enum? midi_device
+  type: DeviceType;
   downloads?: number;
   downloadUrl?: string;
   url?: string;
